@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import DropdownMenu from "../Menu/Dropdown/DropdownMenu";
 import deleteSession from "@/Hooks/deleteSession";
 import { useContext } from "react";
-import { ModalContext } from "@/Components/Modal/ModalProvider";
+import { ModalContext } from "@/Components/Basics/Modal/ModalProvider";
 
 const UserProfile = () => {
     const { handleModal } = useContext(ModalContext)

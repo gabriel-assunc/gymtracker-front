@@ -3,7 +3,7 @@ import "./globals.css";
 import Providers from "@/Components/Providers/Provider";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import getQueryClient from "@/Components/Providers/ReactQuery/getQueryClient";
-import { ModalProvider } from "@/Components/Modal/ModalProvider";
+import { ModalProvider } from "@/Components/Basics/Modal/ModalProvider";
 
 
 export const metadata: Metadata = {
@@ -20,14 +20,16 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <Providers>
-          <HydrationBoundary state={dehydrate(queryClient)}>
-            <div id="portal"> </div>
-            <ModalProvider>
-              {children}
-            </ModalProvider>
-          </HydrationBoundary>
-        </Providers>
+        <div className="h-screen flex justify-center border-2 border-red-300">
+          <Providers>
+            <HydrationBoundary state={dehydrate(queryClient)}>
+              <div id="portal"> </div>
+              <ModalProvider>
+                {children}
+              </ModalProvider>
+            </HydrationBoundary>
+          </Providers>
+        </div>
       </body>
     </html>
   );

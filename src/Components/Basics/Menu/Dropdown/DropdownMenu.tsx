@@ -3,7 +3,7 @@ import { tv } from "tailwind-variants";
 import { useState } from "react";
 
 const ToggleProfileMenuStyle = tv({
-    base: "absolute right-[2%] border-solid border-2 border-pink-200 w-fit",
+    base: "absolute right-[2%] w-fit bg-white p-2 rounded",
 })
 
 type itemType = {
