@@ -33,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/Components/Modal/Modal.tsx"
+    "src/Components/Basics/Modal/Modal.tsx"
   ],
   "exclude": [
     "node_modules"

@@ -8,5 +8,7 @@ export const LoginComponent = () => {
 
     const toggleForm = () => setToLoginForm(!toLoginForm)
 
-    return toLoginForm ? <LoginForm toggleForm={toggleForm} /> : <RegisterUserForm toggleForm={toggleForm} />
+    return <div className="bg-primary rounded-[5px] w-[533px] h-[690px] top-[136px] relative">
+        {toLoginForm ? <LoginForm toggleForm={toggleForm} /> : <RegisterUserForm toggleForm={toggleForm} />}
+    </div>
 }

@@ -2,7 +2,7 @@ import { tv } from "tailwind-variants";
 import UserProfile from "../Profile/UserProfile";
 
 const navBarStyle = tv({
-    base: "flex flex-col justify-center w-full h-[8%] border-solid border-2 border-yellow-500",
+    base: "flex flex-col justify-center w-full h-[8%] bg-primary",
 })
 
 const NavBar = () => {
