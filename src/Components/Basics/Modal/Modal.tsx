@@ -3,7 +3,7 @@ import { useContext, useEffect } from "react"
 import { tv } from "tailwind-variants"
 import { IoClose } from "react-icons/io5";
 import ReactDOM from "react-dom";
-import Button from "../Basics/Buttons/Button";
+import Button from "../Buttons/Button";
 import { ModalContext } from "./ModalProvider";
 
 
